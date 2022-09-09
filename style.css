@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+/* *Global style */
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* TODO margin everywhere is = 15px */
+/* TODO border radius everywhere is = 9px */
+
+/* *header */
+h1 {
+  color: #005b44;
+  font-family: "Mochiy Pop One", sans-serif;
+}
+/* *card */
+.card-container {
+  /* background-color: #051937; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  height: 100%;
+  width: 300px;
+  background-color: #005b44;
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 9px;
+  transition: ease-in-out 1s;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover {
+  background-color: #00bf72;
+  /* transform: scale(1.2); */
+  box-shadow: 5px 15px 25px #2f4858;
+  z-index: 1;
+  /*! keyframes */
+}
+/* *top content */
+.top-content {
+  margin: 15px;
+  text-align: center;
+}
+
+.profile {
+  height: 50px;
+  width: 50px;
+  background-color: #00bf72;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  justify-content: center;
+}
+
+.profile img {
+  width: 100%;
+}
+
+.userDetails {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userDetails h4 {
+  color: #fff;
+  font-size: 12px;
+}
+
+/* form */
+form input:first-child {
+  padding: 5px 20px;
+  margin: 15px 0px;
+  border-radius: 9px;
+  border: 1px solid #005b44;
+  color: #005b44;
+  outline: none;
+}
+form input:first-child:focus {
+ 
+  border: 3px solid #005b44;
+
+}
+form input:last-child {
+  background-color: #005b44;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+}
